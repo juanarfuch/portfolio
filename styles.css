@@ -50,6 +50,8 @@ body{
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    transition: background-color 0.5s ease, color 0.3s ease;
+
 }
 
 .navbar__link:hover{
@@ -323,7 +325,7 @@ body{
     }
 }
 
-.hero, .about, .projects, .contact {
+.section-content{
     animation: fadeIn 1s ease-in;
 }
 
@@ -363,34 +365,39 @@ body{
 
 
 @media (min-width: 1024px) and (max-height: 600px) {
-        .headline {
-          font-size: 1.5rem;
-          margin: 0.5rem 0;
-        }
-        
-        .paragraph {
-          font-size: 1rem;
-          margin-bottom: 0.5rem;
-        }
-        
-        .hero__avatar-container {
-          max-width: 120px;
-          margin-bottom: 0.5rem;
-        }
-        
-        .hero__hero-img-container {
-          max-width: 500px;
-          margin: 0.5rem 0;
-        }
-      
-        .container.--container-space-evenly {
-          justify-content: space-between;
-          height: 90%;
-        }
-      
-        .text-container {
-          margin: 0;
-          padding: 0;
-        }
-      }
-      
+    /* Ajusta el tamaño de la fuente y el margen del título principal en dispositivos con altura máxima de 600px */
+    .headline {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+
+    /* Ajusta el tamaño de la fuente y el margen inferior del párrafo en dispositivos con altura máxima de 600px */
+    .paragraph {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Ajusta el tamaño máximo del contenedor del avatar y el margen inferior en dispositivos con altura máxima de 600px */
+    .hero__avatar-container {
+        max-width: 120px;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Ajusta el tamaño máximo del contenedor de la imagen del héroe y el margen en dispositivos con altura máxima de 600px */
+    .hero__hero-img-container {
+        max-width: 500px;
+        margin: 0.5rem 0;
+    }
+
+    /* Cambia la justificación del contenido del contenedor a "space-between" y ajusta su altura al 90% en dispositivos con altura máxima de 600px */
+    .container .--container-space-evenly {
+        justify-content: space-between;
+        height: 90%;
+    }
+
+    /* Elimina el margen y el padding del contenedor de texto en dispositivos con altura máxima de 600px */
+    .text-container {
+        margin: 0;
+        padding: 0;
+    }
+}
